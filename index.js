@@ -35,7 +35,7 @@ const s = Server((req, res) => {
       }`
     return res.end(`${textFunction}\n`);
    // ! ------------
-    return res.end(`${task.call(x1, x2)}\n`);
+    // return res.end(`${task.call(x1, x2)}\n`);
   } else {
       res.writeHead(404, { 'Content-type': 'text/html; charset=utf-8', ...CORS });
       res.write('Не найдено!\n');
